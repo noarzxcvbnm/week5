@@ -1,0 +1,61 @@
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 a{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/a3ed9441c2522e2b8edb35a9847121eb3e6af16e/student-week1/logo-all-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+    margin-left: 30px;
+    display: block;
+    width: 219px;
+    height: 80px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu a{
+    display: block;
+    font: bold 16px 微軟正黑體;
+    color: #3F5D45;
+    line-height: 80px;
+    text-decoration: none;
+    padding: 0px 30px 0px 30px;
+    
+}
+
+.menu a:hover{
+    background-color: #EAF0ED;
+    color: white;
+}
+.menu .car{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+@media(max-width:568px){
+    h1{
+        width: 40%;
+        a{
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+}

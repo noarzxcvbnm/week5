@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 a{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/a3ed9441c2522e2b8edb35a9847121eb3e6af16e/student-week1/logo-all-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+    margin-left: 30px;
+    display: block;
+    width: 219px;
+    height: 80px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu a{
+    display: block;
+    font: bold 16px 微軟正黑體;
+    color: #3F5D45;
+    line-height: 80px;
+    text-decoration: none;
+    padding: 0px 30px 0px 30px;
+    
+}
+
+.menu a:hover{
+    background-color: #EAF0ED;
+    color: white;
+}
+.menu .car{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent:200%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+/*以上為版頭*/
+
+
+
+
+
+
+/*主要內容*/
+
+
+
+
+
+/*版尾*/
+.footer{
+    background-color: #3F5D45;
+}
+
+
+
+
+.mail{
+    max-width: 940px;
+    margin: 0 auto;
+    font: 24px 微軟正黑體;
+    background-color: #3F5D45;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mail-left{
+    display: flex;
+}
+
+.mail-left img{
+    width: 40px;
+    height: 40px;
+    padding-right: 40px;
+}
+
+.mail-left h3{
+    line-height: 40px;
+    color: white;
+}
+
+form{
+    display: flex;
+    background-color: #EAF0ED;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+}
+
+label{
+    width: 24px;
+    height: 24px;
+    background-color: #EAF0ED;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true) ;
+}
+
+#email {
+    width: 350px;
+    height: 56px;
+    background-color: #EAF0ED;
+    border: none;
+}
+#submit {
+    width: 56px;
+    height: 56px;
+    background: #FFE180 no-repeat url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true) center;
+    border: none;
+}
+
+
+
+.information{
+    background-color: #EAF0ED;
+}
+
+.information .content{
+    padding-top: 39px;
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information .content h4{
+    width: 171px;
+    height: 26px;
+    margin-bottom: 115px;
+}
+
+.information .left p{
+    font: 16px 微軟正黑體;
+    color: #3F5D45;
+    margin-bottom: 30px;
+}
+.information .right p{
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    font: 24px 微軟正黑體;
+    color: #3F5D45; 
+    text-indent: 10px;
+    
+} 
+.icone-footer{
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.icone-footer ul{
+    display: flex;
+}
+
+.icone-footer a{
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    text-indent: 101%;
+    overflow:hidden;
+    white-space:nowrap;
+
+}
+.line{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-line%40.svg);
+}
+.FB{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-facebook.svg);
+}
+.icone-footer p{
+    font: 16px 微軟正黑體;
+    color: #3F5D45;
+    margin-left: 30px;
+}
+
+
+@media(max-width:1920px){
+    .head .car-pic{
+        display: none;
+    }
+    .head .line3{
+        display: none;
+    }
+}
+
+
+@media(max-width:960px){
+    .container .content{
+        flex-direction:column;
+        align-items: center;
+    }
+    .menu02{
+        width: 620px;
+    }
+    .page{
+        display: flex;
+        justify-content:center;
+    }
+    .mail{
+        justify-content:center;
+        flex-direction: column;
+    }
+    .mail-left{
+        margin-bottom: 30px;
+    }
+    .information .content .left{
+        margin-left: 30px;
+    }
+    .information .content .right{
+        margin-right: 30px;
+    }
+    .icone-footer ul{
+        margin-left: 30px;
+    }
+    .icone-footer p{
+        margin-right: 30px;
+    }
+}
+@media(max-width:767px){
+    .menu{
+    display:none;
+     }
+    .head .car-pic{
+    display: block;
+    margin-right: 30px;
+    }
+    .head .line3{
+    display: block;
+    margin-left: 30px;
+    }
+    .banner img{
+        margin-bottom: 0px;
+    }
+    .menu02{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .commodity{
+        width: 315px;
+        margin-left: 10px;
+    }
+    #email {
+        width: 200px;
+        height: 56px;
+        background-color: #EAF0ED;
+        border: none;
+    }
+    .information .content .right{
+        display:none;
+    }
+    .icone-footer{
+        flex-wrap: wrap;
+    }
+    .icone-footer p{
+        margin-top: 20px;
+    }
+    
+
+}

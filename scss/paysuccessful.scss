@@ -1,0 +1,80 @@
+/*CSS reset*/
+@import "reset";
+/*header版頭*/
+@import "header";
+/*中間內容開始*/
+
+.banner{
+    
+    max-width: 940px;
+    height: 460px;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(/img/photo-1505935428862-770b6f24f629.jpg);
+    background-position: center;
+    margin-bottom: 60px;
+    .content{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 130px;
+        span{
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        h2{
+            font: bold 45px 源樣明體 TTF Heavy;
+            color: #3F5D45;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 51px;
+        }
+        .BigViewButtom{
+            text-decoration: none;
+            line-height: 20px;
+            padding: 17px 102px 15px 102px;
+            background-color: #FFE180;
+            font: bold 24px 微軟正黑體;
+            color: #3F5D45;
+            
+  color: #3F5D45;
+        }
+    }
+}
+.SmallViewButtom{
+    text-decoration: none;
+    line-height: 20px;
+    width: 100%;
+    background-color: #FFE180;
+    font: bold 24px 微軟正黑體;
+    color: #3F5D45;
+    display: block;
+    text-align: center;
+    line-height: 65px;
+}
+@media(max-width:1920px){
+    .SmallViewButtom{
+        display: none;
+    }
+}
+@media(max-width:767px){
+    .SmallViewButtom{
+        display: block;
+    }
+    .banner{
+        margin-bottom: 0px;
+        .content{
+            margin-top: 170px;
+        }
+    }
+    .BigViewButtom{
+        display: none;
+    }
+    
+}
+
+/*中間內容結束*/
+/*footer版尾*/
+@import "footer";
